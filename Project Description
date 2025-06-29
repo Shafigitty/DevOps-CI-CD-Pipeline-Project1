@@ -1,0 +1,34 @@
+Tools & Technologies -
+
+GitHub – Version control and source code repository.
+
+Jenkins – CI/CD automation server.
+
+Ant – Build tool for compiling Java code.
+
+JUnit – Unit testing framework.
+
+Tomcat – Application server for deployment.
+
+Pipeline Breakdown - 
+
+1. First Job – GitHub
+Pulls the latest source code from the GitHub repository.
+
+Uses PollSCM to monitor changes in the repo.
+
+2. Second Job – Ant
+Builds the Java project using build.xml.
+
+Compiles source code and performs quality checks.
+
+3. Third Job – JUnit
+Runs automated unit tests using JUnit.
+
+Publishes test reports in Jenkins.
+
+4. Fourth Job – Deploy
+Deploys the final .war package to an Apache Tomcat server.
+
+Makes the application live as the end product.
+
